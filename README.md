@@ -27,7 +27,7 @@ Steam Online Tracker is a Python script that monitors the online status of a spe
 
 ## How It Works
 
-The script sends periodic requests to the Steam Web API to check the online status of the specified user. If the user's status changes to "online", the script logs the current date and time.
+The script sends periodic requests to the Steam Web API to check the online status of the specified user. If the user's status changes to "online", the script logs the current date and time. Additionally, it retrieves and displays more information about the user, such as their profile name, profile URL, avatar, last logoff time, and account creation time.
 
 ## Example Usage
 
@@ -42,8 +42,13 @@ The script sends periodic requests to the Steam Web API to check the online stat
     Enter the Steam ID of the user: 76561198000000000
     ```
 
-3. The script will output the time when the user comes online:
+3. The script will output user information and the time when the user comes online:
     ```sh
+    User: ExampleUser
+    Profile URL: https://steamcommunity.com/id/exampleuser/
+    Avatar URL: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/xx/xxxxxxxxxxxxx.jpg
+    Last Logoff: 2024-07-15 18:45:00
+    Account Created: 2010-06-10 12:00:00
     The user came online at 2024-07-16 14:32:00
     ```
 
